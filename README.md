@@ -1,22 +1,22 @@
 # squad-rcon-php
 RCON client for Squad dedicated server
 
-# USAGE
+## USAGE
 
-# Create instance
-$server = new SquadServer(SQUAD_SERVER_HOST, SQUAD_SERVER_PORT, SQUAD_SERVER_PASSWORD);
+### Create instance
+$server = new SquadServer('server.squad-slovenia.com', 21114, 'verySecretPassword');
 
-# Get currently active players
+### Get currently active players
 $players = $server->currentPlayers();
 
-# Get current and next map
+### Get next and current map
 $maps = $server->currentMaps();
 
-# Broadcast message to all players on the server
-$server->broadcastMessage('Hello from the other side')
+### Broadcast message to all players on the server
+$server->broadcastMessage('Hello from the other side');
 
-# Change map (end current game)
-$server->changeMap('Sumari AAS v1')
+### Change map (end current game)
+$server->changeMap('Sumari AAS v1');
 
-# Set next map
-$server->nextMap('Gorodok')
+### Set next map
+$server->nextMap('Gorodok');
