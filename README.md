@@ -1,5 +1,4 @@
-# squad-rcon-php
-RCON client for Squad dedicated server
+# RCON PHP wrapper for Squad server management
 
 ## USAGE
 
@@ -20,3 +19,30 @@ $server->changeMap('Sumari AAS v1');
 
 ### Set next map
 $server->nextMap('Gorodok');
+
+
+## AVAILABLE COMMANDS (NOV 2016)
+
+* ListPlayers
+* ShowNextMap
+* AdminKick "\<NameOrSteamId\>" \<KickReason\>
+* AdminKickById \<PlayerId\> \<KickReason\>
+* AdminBan "\<NameOrSteamId\>" "\<BanLength\>" \<BanReason\>
+* AdminBanById \<PlayerId\> "\<BanLength\>" \<BanReason\>
+* AdminBroadcast \<Message\>
+* ChatToAdmin \<Message\>
+* AdminRestartMatch
+* AdminEndMatch
+* AdminPauseMatch
+* AdminUnpauseMatch
+* AdminKillServer \<Force [0|1]\>
+* AdminChangeMap \<MapName\>
+* AdminSetNextMap \<MapName\>
+* AdminSetMaxNumPlayers \<NumPlayers\>
+* AdminSetNumReservedSlots \<NumReserved\>
+* AdminSetServerPassword \<Password\>
+* AdminAddCameraman \<NameOrId\>
+* AdminDemoRec \<FileName\>
+* AdminDemoStop
+* AdminListDisconnectedPlayers
+* AdminForceNetUpdateOnClientSaturation \<Enabled [0|1]\>
